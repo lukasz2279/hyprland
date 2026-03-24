@@ -1,0 +1,41 @@
+{
+	"clock": {
+  "interval": 60,
+  "format": "{:%H:%M}",
+  "tooltip-format": "{:%A, %d %B %Y}",
+  "max-length": 25
+  },
+
+	"network": {
+  "format-wifi": " {essid}",
+	"tooltip-format": "{ipaddr}",
+  "format-ethernet": " {ifname}",
+  "format-disconnected": " Disconnected",
+  "on-click": "kitty nmtui",
+  "max-length": 50
+  },
+
+	"pulseaudio": {
+  "format": "{icon} {volume}%",
+  "format-muted": "",
+  "format-icons": {
+  "headphone": "",
+  "default": ["", ""]
+  },
+  "scroll-step": 1,
+  "on-click": "pavucontrol"
+  },
+
+	"battery": {
+  "interval": 60,
+  "states": {
+  "good": 95,
+  "warning": 50,
+  "critical": 30
+  },
+  "format": "󰁹 {capacity}%",
+  "format-charging": " {capacity}%",
+  "format-plugged": " {capacity}%",
+  "max-length": 25
+  }
+}

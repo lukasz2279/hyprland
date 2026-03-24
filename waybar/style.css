@@ -1,0 +1,97 @@
+* {
+    font-family: JetBrainsMono Nerd Font;
+    font-size: 18px;
+}
+
+window#waybar {
+    background-color: #22222f;
+    color: #ffffff;
+    transition-property: background-color;
+    transition-duration: .5s;
+		border-radius: 8px;
+		padding:4 8px;
+}
+
+window#waybar.hidden {
+    opacity: 0.2;
+}
+
+button {
+		background-color: transparent;
+}
+
+#workspaces button {
+	  padding: 0 2px;
+    background-color: transparent;
+    color: #ffffff;
+}
+
+#workspaces button.active {
+    background-color: #ffffff;
+		color: #22222f;
+}
+
+#clock,
+#battery,
+#network,
+#pulseaudio {
+    margin-top: 2px;
+    margin-bottom: 2px;
+    margin-left: 4px;
+    margin-right: 4px;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding: 0 10px;
+}
+
+#window,
+#workspaces {
+    margin: 0 4px;
+}
+
+#network,
+#network.disconnected {
+	  background-color: #22222f;
+		color: #ffffff;
+    border-radius: 8px;
+    padding: 4px 8px;
+}
+
+#pulseaudio,
+#pulseaudio.muted {
+	  background-color: #22222f;
+		color: #ffffff;
+    border-radius: 8px;
+    padding: 4px 8px;
+}
+
+#clock {
+	  background-color: #22222f;
+		color: #ffffff;
+    border-radius: 8px;
+    padding: 4px 8px;
+}
+
+#battery {
+    background-color: #22222f;
+		color: #ffffff;
+    border-radius: 8px;
+    padding: 4px 8px;
+}
+
+#battery.charging,
+#battery.plugged {
+    background-color: #00a300;
+		color: #ffffff;
+		border-radius: 8px;
+		padding: 4px 8px;
+}
+
+#battery.critical:not(.charging) {
+    background-color: #ff0000;
+    color: #ffffff;
+}
+
+label:focus {
+    background-color: #000000;
+}
